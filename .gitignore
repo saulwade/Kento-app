@@ -5,8 +5,8 @@ node_modules/
 .next/
 out/
 
-# Convex generated files (created by `npx convex dev`)
-convex/_generated/
+# Convex generated files - committed for Vercel builds
+# convex/_generated/
 
 # Environment variables
 .env.local
