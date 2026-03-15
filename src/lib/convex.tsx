@@ -5,8 +5,8 @@ import { useAuth } from "@clerk/nextjs";
 
 const convex = new ConvexReactClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const clerkUseAuth = useAuth as any;
+// eslint-disable-next-line
+const clerkUseAuth = useAuth as any; // type mismatch between clerk versions
 
 export function ConvexClientProvider({ children }: { children: React.ReactNode }) {
   return (
